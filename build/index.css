@@ -1,0 +1,10 @@
+div {
+  background: blue;
+  color: white;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
