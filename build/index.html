@@ -8,7 +8,20 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
   </head>
-  <link rel="stylesheet" href="/index.css" />
+  <script>
+    function addCssByStyle(href) {
+      var doc = document;
+      var style = doc.createElement("link");
+      style.setAttribute("rel", "stylesheet");
+      style.setAttribute("href", href);
+
+      var heads = doc.getElementsByTagName("head");
+      if (heads.length) heads[0].appendChild(style);
+      else doc.documentElement.appendChild(style);
+    }
+    var oem = window.origin.replace("http://ipin.", "").replace(".com", "");
+    addCssByStyle(`/${oem}.css`);
+  </script>
   <body>
     <div>
       webtheme
