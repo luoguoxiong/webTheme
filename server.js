@@ -34,7 +34,6 @@ const buildCss = (bg, color, oem) => {
               console.log("done");
             }
           });
-          // todo cdn上传
         }
       }
     );
